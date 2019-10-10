@@ -1,3 +1,6 @@
+/*
+HEADER
+*/
 .hero.has-background {
   position: relative;
   overflow: hidden;
@@ -20,9 +23,51 @@
   color: #dfe6e9;
 }
 
-.hero .hero-foot .bulma-logo {
-  padding: 0;
-  margin: 0;
-  float: right;
-  width: 10%;
+/*
+END HEADER
+*/
+
+
+
+/*
+MAIN CONTENT
+*/
+
+/*
+END MAIN CONTENT
+*/
+
+
+
+
+/*
+FOOTER
+*/
+.footer {
+  background-color: #2d3436;
 }
+
+.footer .bulma-logo {
+  margin-bottom: -10px;
+  width: 7%;
+}
+
+.footer a .logo-github {
+  margin-bottom: -5px;
+  font-size: 45px;
+  color: black;
+}
+
+.footer .footer-text {
+  color: #b2bec3;
+
+}
+
+.footer .footer-text b {
+  color: #dfe6e9;
+
+}
+
+/*
+END FOOTER
+*/
