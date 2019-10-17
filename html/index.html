@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="">
+<html>
 
 <head>
   <meta charset="utf-8" />
@@ -13,17 +13,17 @@
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
-<body>
+<body id="body">
+
   <!-- Header -->
-  <section class="hero is-dark is-fullheight has-background">
-    <img alt="Fill Murray" class="hero-background is-transparent" src="../img/bg.png" />
+  <section class="hero is-fullheight has-background" id="has-background">
     <div class="hero-head">
       <!-- Navbar -->
       <header class="navbar is-fixed-top">
         <div class="navbar-brand">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-rounded is-light is-active">
+              <a class="button is-rounded is-light is-active" href="#">
                 <span class="icon is-small"><i class="fas fa-sign" aria-hidden="true"></i></span>
                 <span><b>Accueil</b></span>
               </a>
@@ -44,7 +44,7 @@
                   <span class="icon is-small"><i class="fas fa-list" aria-hidden="true"></i></span>
                   <span> Compétences </span>
                 </a>
-                <a class="button is-rounded is-light">
+                <a class="button is-rounded is-light" href="#projects">
                   <span class="icon is-small"><i class="fas fa-code" aria-hidden="true"></i></span>
                   <span> Projets </span>
                 </a>
@@ -87,35 +87,367 @@
   </section>
   <!-- Header -->
 
-  <section class="section">
+  <hr class="hr-blue" />
+
+  <!-- Section compétences -->
+  <section class="section notification" id="skills">
     <div class="container">
-      <div class="notification">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
+      <h2 class="title is-2">Compétences</h2>
+      <!--Première ligne de compétences-->
+      <section class="section" id="languages">
+        <h3 class="title is-3">Langages</h3>
+        <section class="section first-line">
+          <div class="columns is-variable is-8">
+            <div class="column">
+              <h3 class="subtitle is-3">Javascript</h3>
+              <progress class="progress is-small is-link" value="50" max="100">50%</progress>
+            </div>
+
+            <div class="column">
+              <h3 class="subtitle is-3">Java</h3>
+              <progress class="progress is-small is-link" value="40" max="100">40%</progress>
+            </div>
+
+            <div class="column">
+              <h3 class="subtitle is-3">C#</h3>
+              <progress class="progress is-small is-link" value="25" max="100">25%</progress>
+            </div>
+
+          </div>
+        </section>
+        <!--Seconde ligne de compétences-->
+        <section class="section second-line">
+          <div class="columns is-variable is-8">
+            <div class="column">
+              <h3 class="subtitle is-3">HTML / CSS</h3>
+              <p></p>
+              <progress class="progress is-small is-link" value="20" max="100">20%</progress>
+            </div>
+            <div class="column">
+              <h3 class="subtitle is-3">Bulma</h3>
+              <progress class="progress is-small is-link" value="20" max="100">20%</progress>
+            </div>
+            <div class="column">
+              <h3 class="subtitle is-3">Bash</h3>
+              <progress class="progress is-small is-link" value="15" max="100">15%</progress>
+            </div>
+          </div>
+        </section>
+        <!--troisième ligne de compétences-->
+        <section class="section second-line">
+          <div class="columns is-variable is-8">
+            <div class="column">
+              <h3 class="subtitle is-3">QML</h3>
+              <progress class="progress is-small is-link" value="15" max="100">15%</progress>
+            </div>
+            <div class="column">
+              <h3 class="subtitle is-3">Node.Js</h3>
+              <progress class="progress is-small is-link" value="10" max="100">10%</progress>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="section" id="software">
+        <h3 class="title is-3">Logiciels</h3>
+        <section class="section first-line">
+          <div class="columns is-variable is-8">
+            <div class="column">
+              <h3 class="subtitle is-3">Photoshop / Premiere Pro</h3>
+              <progress class="progress is-small is-link" value="15" max="100">15%</progress>
+            </div>
+
+            <div class="column">
+              <h3 class="subtitle is-3">Blender</h3>
+              <progress class="progress is-small is-link" value="20" max="100">20%</progress>
+            </div>
+
+            <div class="column">
+              <h3 class="subtitle is-3">C#</h3>
+              <progress class="progress is-small is-link" value="25" max="100">25%</progress>
+            </div>
+
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+  <!-- Section compétences -->
+
+  <hr class="hr-blue-invert" />
+
+  <!-- Section projets -->
+  <section class="section section-blue" id="projects">
+    <div class="container">
+      <h2 class="title is-2">Projets</h2>
+
+      <!-- Projets portfolio -->
+      <section class="section" id="portfolio">
+        <div class="columns">
+          <div class="column">
+            <img src="../img/portfolio.png" alt="image projet portfolio avec le framework Bulma">
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3"></i>Portfolio w/ Bulma <i class="fas fa-book-open" aria-hidden="true"></i></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
+                est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
+                ipsum fuga nulla.
+              </p>
+              <button class="button is-dark bottom-right show-modal" id="portfolio">En savoir plus</button>
+              <div class="modal modal-portfolio">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Portfolio w/ Bulma</p>
+                    <button class="delete to-close" id="portfolio" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cumque quos molestias at voluptas
+                    maxime consequatur nemo nisi placeat, numquam quidem delectus commodi cupiditate molestiae officiis,
+                    mollitia doloribus quas eligendi.
+                  </section>
+                  <footer class="modal-card-foot">
+
+                    <div class="buttons">
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-html5" aria-hidden="true"></i></span>
+                        <span>HTML</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-css3-alt" aria-hidden="true"></i></span>
+                        <span>CSS</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-js" aria-hidden="true"></i></span>
+                        <span>Js</span>
+                      </a>
+                      <a class="button is-rounded is-dark" href="https://bulma.io" target="_blank">
+                        <span>Bulma</span>
+                      </a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </section>
+
+      <!-- Projets portfolio -->
+
+      <!-- Projets bot discord -->
+      <section class="section" id="discord-bot">
+        <div class="columns">
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3"></i>Robot Discord.Js <i class="fas fa-robot" aria-hidden="true"></i></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
+                est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
+                ipsum fuga nulla.
+              </p>
+              <button class="button is-dark bottom-right show-modal" id="discord">En savoir plus</button>
+              <div class="modal modal-discord">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Robot Discord.Js</p>
+                    <button class="delete to-close" id="discord" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cumque quos molestias at voluptas
+                    maxime consequatur nemo nisi placeat, numquam quidem delectus commodi cupiditate molestiae officiis,
+                    mollitia doloribus quas eligendi.
+                  </section>
+                  <footer class="modal-card-foot">
+
+                    <div class="buttons">
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-js" aria-hidden="true"></i></span>
+                        <span>Js</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-node-js" aria-hidden="true"></i></span>
+                        <span>Node.Js</span>
+                      </a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="column">
+            <img src="../img/portfolio.png" alt="image projet robot discord lancé avec Node.js">
+          </div>
+        </div>
+
+
+      </section>
+      <!-- Projets bot discord -->
+
+      <!-- Projets rendu 3D -->
+      <section class="section" id="3d-render">
+        <div class="columns">
+
+          <div class="column">
+            <img src="../img/portfolio.png" alt="image projet robot discord lancé avec Node.js">
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3"></i>Rendu 3D <i class="fas fa-cube" aria-hidden="true"></i></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
+                est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
+                ipsum fuga nulla.
+              </p>
+              <button class="button is-dark bottom-right show-modal" id="3d-render">En savoir plus</button>
+              <div class="modal modal-3d-render">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Rendu 3D</p>
+                    <button class="delete to-close" id="3d-render" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cumque quos molestias at voluptas
+                    maxime consequatur nemo nisi placeat, numquam quidem delectus commodi cupiditate molestiae officiis,
+                    mollitia doloribus quas eligendi.
+                  </section>
+                  <footer class="modal-card-foot">
+
+                    <div class="buttons">
+                      <a class="button is-rounded is-dark">
+                        <span>Blender</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span>Mineways</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span>Photoshop</span>
+                      </a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+      <!-- Projets rendu 3D -->
+
+      <!-- Projets serveur -->
+      <section class="section" id="server">
+        <div class="columns">
+
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3"></i>Serveur de jeu <i class="fas fa-gamepad" aria-hidden="true"></i></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
+                est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
+                ipsum fuga nulla.
+              </p>
+              <button class="button is-dark bottom-right show-modal" id="server">En savoir plus</button>
+              <div class="modal modal-server">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Serveur de jeu</p>
+                    <button class="delete to-close" id="server" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cumque quos molestias at voluptas
+                    maxime consequatur nemo nisi placeat, numquam quidem delectus commodi cupiditate molestiae officiis,
+                    mollitia doloribus quas eligendi.
+                  </section>
+                  <footer class="modal-card-foot">
+
+                    <div class="buttons">
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-java" aria-hidden="true"></i></span>
+                        <span>Java</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fab fa-linux" aria-hidden="true"></i></span>
+                        <span>Bash & Linux</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span class="icon is-small"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span>Manager</span>
+                      </a>
+                      <a class="button is-rounded is-dark">
+                        <span>Configuration</span>
+                      </a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <img src="../img/portfolio.png" alt="image projet robot discord lancé avec Node.js">
+          </div>
+
+        </div>
+
+
+      </section>
+      <!-- Projets bot discord -->
+
+
+    </div>
+  </section>
+  <!-- Section projets -->
+
+
+  <hr class="hr-blue" />
+  <!-- Section cv -->
+  <section class="section notification" id="resume">
+    <div class="container">
+      <h2 class="title is-2">CV</h2>
+
+    </div>
+  </section>
+  <!-- Section cv -->
+
+  <hr class="hr-blue-invert" />
+
+  <!-- Footer -->
+  <section>
+    <div class="footer">
+      <div class="content has-text-centered">
+        <p class="footer-text"> Made by <b>DUPONT Antoine</b> with
+          <a href="https://bulma.io" target=_blank>
+            <img class="bulma-logo" src="../img/bulma--white.png" alt="logo bulma">
+          </a>
+        </p>
+        <p class="footer-text">
+          <b>Source code</b> on my
+          <a href="https://github.com/BoBsmil3Y" target=_blank>
+            <i class="fab fa-github logo-github"></i>
+          </a>
+        </p>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <section class="footer">
-    <div class="content has-text-centered">
-      <p class="footer-text"> Made by <b>DUPONT Antoine</b> with
-        <a href="https://bulma.io" target=_blank>
-          <img class="bulma-logo" src="../img/bulma--white.png" alt="logo bulma">
-        </a>
-      </p>
-      <p class="footer-text">
-        <b>Source code</b> on my
-        <a href="https://github.com/BoBsmil3Y" target=_blank>
-          <i class="fab fa-github logo-github"></i>
-        </a>
-      </p>
-    </div>
-  </section>
   <!-- Footer -->
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/main.js"></script>
 </body>
 

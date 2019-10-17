@@ -1,26 +1,20 @@
 /*
 HEADER
 */
-.hero.has-background {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-background {
-  position: absolute;
-  object-fit: cover;
-  object-position: center center;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-background.is-transparent {
-  opacity: 0.4;
-}
-
 .hero .hero-body .subtitle,
 .hero .hero-body .title {
   color: #dfe6e9;
+}
+
+.has-background {
+  background-image: url("../img/bg.png");
+  background-position: top center;
+  background-attachment: scroll;
+  background-color: #636e72;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
 
 /*
@@ -29,9 +23,31 @@ END HEADER
 
 
 
+
 /*
 MAIN CONTENT
 */
+hr {
+  height: 4px;
+  margin-top: -25px;
+  margin-bottom: 0px;
+}
+
+.hr-blue {
+  background: rgb(32, 117, 176);
+  background: linear-gradient(90deg, rgba(32, 117, 176, 1) 0%, rgba(2, 0, 36, 0.053658963585434205) 100%);
+}
+
+.hr-blue-invert {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.053658963585434205) 0%, rgba(32, 117, 176, 1) 100%);
+}
+
+.section-blue {
+  background-image: linear-gradient(109.6deg, rgba(231, 152, 32, 0.5) 0%, rgba(239, 200, 140, 0.5) 90%);
+}
+
+/*background-image: linear-gradient( 109.6deg,  rgba(3,195,187,1) 11.2%, rgba(180,196,255,1) 91.1% );*/
 
 /*
 END MAIN CONTENT
@@ -39,12 +55,17 @@ END MAIN CONTENT
 
 
 
-
 /*
 FOOTER
 */
 .footer {
-  background-color: #2d3436;
+  background-image: url("../img/bear.png");
+  background-position: auto;
+  background-attachment: scroll;
+  background-color: #636e72;
+  background-blend-mode: multiply;
+  /*background-size: auto 100%;*/
+  background-repeat: no-repeat;
 }
 
 .footer .bulma-logo {
@@ -60,12 +81,10 @@ FOOTER
 
 .footer .footer-text {
   color: #b2bec3;
-
 }
 
 .footer .footer-text b {
   color: #dfe6e9;
-
 }
 
 /*
