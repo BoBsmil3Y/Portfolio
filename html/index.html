@@ -87,7 +87,7 @@
   </section>
   <!-- Header -->
 
-  <hr class="hr-blue" />
+  <hr class="hr-blue hr-header" />
 
   <!-- Section compétences -->
   <section class="section notification" id="skills">
@@ -154,6 +154,12 @@
         <h3 class="title is-3">Logiciels</h3>
         <section class="section first-line">
           <div class="columns is-variable is-8">
+
+            <div class="column">
+              <h3 class="subtitle is-3">Visual Studio Code</h3>
+              <progress class="progress is-small is-link" value="25" max="100">25%</progress>
+            </div>
+
             <div class="column">
               <h3 class="subtitle is-3">Photoshop / Premiere Pro</h3>
               <progress class="progress is-small is-link" value="15" max="100">15%</progress>
@@ -162,11 +168,6 @@
             <div class="column">
               <h3 class="subtitle is-3">Blender</h3>
               <progress class="progress is-small is-link" value="20" max="100">20%</progress>
-            </div>
-
-            <div class="column">
-              <h3 class="subtitle is-3">C#</h3>
-              <progress class="progress is-small is-link" value="25" max="100">25%</progress>
             </div>
 
           </div>
@@ -179,7 +180,7 @@
   <hr class="hr-blue-invert" />
 
   <!-- Section projets -->
-  <section class="section section-blue" id="projects">
+  <section class="section" id="projects">
     <div class="container">
       <h2 class="title is-2">Projets</h2>
 
@@ -197,7 +198,7 @@
                 est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
                 ipsum fuga nulla.
               </p>
-              <button class="button is-dark bottom-right show-modal" id="portfolio">En savoir plus</button>
+              <button class="button is-info is-outlined bottom-right show-modal" id="portfolio">En savoir plus</button>
               <div class="modal modal-portfolio">
                 <div class="modal-background"></div>
                 <div class="modal-card">
@@ -253,7 +254,7 @@
                 est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
                 ipsum fuga nulla.
               </p>
-              <button class="button is-dark bottom-right show-modal" id="discord">En savoir plus</button>
+              <button class="button is-info is-outlined bottom-right show-modal" id="discord">En savoir plus</button>
               <div class="modal modal-discord">
                 <div class="modal-background"></div>
                 <div class="modal-card">
@@ -309,7 +310,7 @@
                 est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
                 ipsum fuga nulla.
               </p>
-              <button class="button is-dark bottom-right show-modal" id="3d-render">En savoir plus</button>
+              <button class="button is-info is-outlined bottom-right show-modal" id="3d-render">En savoir plus</button>
               <div class="modal modal-3d-render">
                 <div class="modal-background"></div>
                 <div class="modal-card">
@@ -360,7 +361,7 @@
                 est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
                 ipsum fuga nulla.
               </p>
-              <button class="button is-dark bottom-right show-modal" id="server">En savoir plus</button>
+              <button class="button is-info is-outlined bottom-right show-modal" id="server">En savoir plus</button>
               <div class="modal modal-server">
                 <div class="modal-background"></div>
                 <div class="modal-card">
@@ -419,12 +420,50 @@
   <section class="section notification" id="resume">
     <div class="container">
       <h2 class="title is-2">CV</h2>
+      <section class="section">
+        <div class="columns has-text-centered">
+          <!-- Bouton plein écran -->
+          <div class="column">
+            <button class="button is-large btn-hover show-modal" id="resume">
+              <span class="icon has-text-light">
+                <i class="fas fa-expand-arrows-alt"></i>
+              </span>
+              <span class="has-text-light">Ouvrir en plein écran (.jpg)</span>
+            </button>
+          </div>
+          <!-- Bouton plein écran -->
+          <!-- Bouton télécharger -->
+          <div class="column">
+            <a class="button is-large btn-hover" href="../files/CV-D-Antoine.pdf" download>
+              <span class="icon has-text-light">
+                <i class="fas fa-file-download"></i>
+              </span>
+              <span class="has-text-light">Télécharger en format PDF</span>
+            </a>
+          </div>
+          <!-- Bouton télécharger -->
+        </div>
 
+
+        <!-- Modal CV -->
+        <div class="modal modal-resume">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <p class="image">
+              <img src="../files/CV-2019.jpg" alt="Mon CV">
+            </p>
+
+          </div>
+          <button class="modal-close to-close is-large" id="resume" aria-label="close"></button>
+        </div>
+        <!-- Modal CV -->
+
+      </section>
     </div>
   </section>
   <!-- Section cv -->
 
-  <hr class="hr-blue-invert" />
+  <hr class=" hr-blue-invert" />
 
   <!-- Footer -->
   <section>
