@@ -1,20 +1,33 @@
 /*
+Violet clair : #686ea7
+Violet foncé : #43405a
+*/
+
+/*
 HEADER
 */
 .hero .hero-body .subtitle,
 .hero .hero-body .title {
-  color: #dfe6e9;
+  color: #f1f2f6;
 }
 
 .has-background {
   background-image: url("../img/bg.png");
   background-position: top center;
   background-attachment: scroll;
-  background-color: #636e72;
+  background-color: #95a5a6;
   background-blend-mode: multiply;
   background-size: cover;
   height: 80vh;
   width: 100%;
+}
+
+h1.head {
+  text-shadow: 3px 1px 3px rgb(77, 81, 128);
+}
+
+h2.head {
+  text-shadow: 2px 1px 1px rgb(77, 81, 128);
 }
 
 /*
@@ -25,9 +38,13 @@ END HEADER
 
 
 /*
+
 MAIN CONTENT
+
 */
-/* Hr blue line */
+/* 
+  Hr purple line 
+*/
 hr {
   height: 4px;
   margin-bottom: 0px;
@@ -41,23 +58,39 @@ hr {
 }
 
 .hr-blue {
-  background: rgb(32, 117, 176);
-  background: linear-gradient(90deg, rgba(32, 117, 176, 1) 0%, rgba(2, 0, 36, 0.053658963585434205) 100%);
+  background: rgb(104, 110, 167);
+  background: linear-gradient(90deg, rgba(104, 110, 167, 1) 0%, rgba(77, 81, 128, 0.053658963585434205) 100%);
 }
 
 .hr-blue-invert {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.053658963585434205) 0%, rgba(32, 117, 176, 1) 100%);
+  background: rgb(77, 81, 128);
+  background: linear-gradient(90deg, rgba(77, 81, 128, 0.053658963585434205) 0%, rgba(104, 110, 167, 1) 100%);
 }
 
-/* Resume button */
-.btn-hover {
+/* 
+  Text selection color change
+*/
+::selection {
+  background: rgb(142, 151, 235);
+}
+
+::-moz-selection {
+  background: rgb(142, 151, 235);
+}
+
+/* 
+  Resume button
+*/
+
+.btn-hover,
+span.btn-hover {
   font-size: 16px;
   cursor: pointer;
   margin: 20px;
   height: 55px;
   border: none;
   background-size: 300% 100%;
+  color: #ffffff;
 }
 
 .btn-hover:hover {
@@ -66,25 +99,52 @@ hr {
   -o-transition: all .7s ease-in-out;
   -webkit-transition: all .7s ease-in-out;
   transition: all .7s ease-in-out;
+  color: #ffffff;
 }
 
 .btn-hover {
-  background-image: linear-gradient(to right, #4a69bd 0%, #6a89cc 51%, #4a69bd 100%);
-  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  background-image: linear-gradient(to right, #7076a9 0%, #bfc1d9 51%, #7076a9 100%);
+  box-shadow: 0 4px 15px 0 rgba(104, 110, 167, 0.75);
 }
 
 section a {
   text-decoration: none;
 }
 
+
 /*
+  Dropdown menu links
+*/
+a.link-purple {
+  color: rgb(142, 151, 235);
+  background-color: #ffffff;
+}
+
+a.link-purple:hover {
+  background-color: rgb(142, 151, 235);
+  color: #ffffff;
+}
+
+/*
+  Padding icon
+*/
+.padding-icon {
+  margin-right: 5%;
+}
+
+
+/*
+
 END MAIN CONTENT
+
 */
 
 
 
 /*
+
 FOOTER
+
 */
 .footer {
   background-image: url("../img/bear.png");
@@ -115,5 +175,7 @@ FOOTER
 }
 
 /*
+
 END FOOTER
+
 */
