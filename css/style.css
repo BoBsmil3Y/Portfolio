@@ -67,6 +67,19 @@ hr {
   background: linear-gradient(90deg, rgba(77, 81, 128, 0.053658963585434205) 0%, rgba(104, 110, 167, 1) 100%);
 }
 
+p span {
+  color: rgb(82, 96, 224);
+}
+
+.padding-image {
+  padding-left: 10%;
+}
+
+.image-effect {
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.25rem rgb(142, 151, 235));
+}
+
 /* 
   Text selection color change
 */
@@ -81,6 +94,10 @@ hr {
 /* 
   Resume button
 */
+
+
+
+
 
 .btn-hover,
 span.btn-hover {
@@ -146,6 +163,8 @@ END MAIN CONTENT
 FOOTER
 
 */
+
+/*
 .footer {
   background-image: url("../img/bear.png");
   background-position: auto;
@@ -154,24 +173,51 @@ FOOTER
   background-blend-mode: multiply;
   background-repeat: no-repeat;
 }
-
-.footer .bulma-logo {
-  margin-bottom: -10px;
-  width: 7%;
+*/
+.footer {
+  background-image: url("../img/bg.png");
+  background-position: 100% 90%;
+  background-color: #95a5a6;
+  background-blend-mode: multiply;
+  background-size: cover;
 }
 
-.footer a .logo-github {
-  margin-bottom: -5px;
-  font-size: 45px;
-  color: black;
+li {
+  list-style-type: none;
 }
 
-.footer .footer-text {
-  color: #b2bec3;
+.fa-github {
+  color: #1e272e;
 }
 
-.footer .footer-text b {
+.fa-linkedin {
+  color: #3867d6;
+}
+
+a.link {
   color: #dfe6e9;
+}
+
+a.link:hover {
+  color: rgb(142, 151, 235);
+}
+
+a.link-inverted {
+  color: rgb(142, 151, 235);
+}
+
+a.link-inverted:hover {
+  color: rgb(142, 151, 235, 0.8);
+}
+
+.text-white {
+  color: #dfe6e9;
+  font-size: 25px;
+}
+
+
+.padding-badge {
+  padding-left: 50%;
 }
 
 /*

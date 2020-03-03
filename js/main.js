@@ -14,6 +14,7 @@ $(".to-close").click(function () {
 /*
 Parallax background
 */
+
 document.getElementById("body").onscroll = function myFunction() {
   var scrolltotop = document.scrollingElement.scrollTop;
   var target = document.getElementById("has-background");
