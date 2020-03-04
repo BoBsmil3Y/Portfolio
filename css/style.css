@@ -6,6 +6,7 @@ Violet foncé : #43405a
 /*
 HEADER
 */
+
 .hero .hero-body .subtitle,
 .hero .hero-body .title {
   color: #f1f2f6;
@@ -42,9 +43,12 @@ END HEADER
 MAIN CONTENT
 
 */
+
+
 /* 
   Hr purple line 
 */
+
 hr {
   height: 4px;
   margin-bottom: 0px;
@@ -71,18 +75,33 @@ p span {
   color: rgb(82, 96, 224);
 }
 
+
 .padding-image {
   padding-left: 10%;
 }
 
 .image-effect {
   border-radius: 10px;
-  filter: drop-shadow(0 0 0.25rem rgb(142, 151, 235));
+  filter: drop-shadow(0 0 0.20rem rgb(142, 151, 235));
+}
+
+.project-effect {
+  filter: drop-shadow(0rem 0rem 0.25rem #686ea7);
+}
+
+.icon-color {
+  color: #686ea7;
+}
+
+.text-right {
+  text-align: right;
+  float: right;
 }
 
 /* 
   Text selection color change
 */
+
 ::selection {
   background: rgb(142, 151, 235);
 }
@@ -91,13 +110,10 @@ p span {
   background: rgb(142, 151, 235);
 }
 
+
 /* 
   Resume button
 */
-
-
-
-
 
 .btn-hover,
 span.btn-hover {
@@ -164,16 +180,6 @@ FOOTER
 
 */
 
-/*
-.footer {
-  background-image: url("../img/bear.png");
-  background-position: auto;
-  background-attachment: scroll;
-  background-color: #636e72;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-}
-*/
 .footer {
   background-image: url("../img/bg.png");
   background-position: 100% 90%;
@@ -214,7 +220,6 @@ a.link-inverted:hover {
   color: #dfe6e9;
   font-size: 25px;
 }
-
 
 .padding-badge {
   padding-left: 50%;
