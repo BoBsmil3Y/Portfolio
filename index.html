@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:og="http://ogp.me/ns#">
 
 <head>
+
+  <!-- Primary Meta Tags -->
+  <title>Portfolio | DUPONT Antoine</title>
+  <meta name="title" content="Portfolio | DUPONT Antoine">
+  <meta name="description"
+    content="Voici mon portfolio ! Compétences, projets, CV à jour ... Tout y est ! Laissez-vous tenter par un très court instant de plaisir visuel !">
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="DUPONT Antoine">
-  <meta name="description" content="Bienvenue sur mon portfolio, vous y trouverez mes compétences et projets !" />
   <meta name="keywords" content="portfolio, dupont antoine, bts sio, informatique, programmation, lille" />
-  <meta property="og:image" content="img/logo.png">
-  <title>Portfolio | DUPONT Antoine</title>
+  <meta name="author" content="DUPONT Antoine" />
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://antoine-dupont.zd.fr/">
+  <meta property="og:title" content="Portfolio | DUPONT Antoine">
+  <meta property="og:description"
+    content="Voici mon portfolio ! Compétences, projets, CV à jour ... Tout y est ! Laissez-vous tenter par un très court instant de plaisir visuel !">
+  <meta property="og:image" content="https://antoine-dupont.zd.fr/img/moi.jpg">
+  <meta property="og:site_name" content="Portfolio | DUPONT Antoine" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://antoine-dupont.zd.fr/">
+  <meta property="twitter:title" content="Portfolio | DUPONT Antoine">
+  <meta property="twitter:description"
+    content="Voici mon portfolio ! Compétences, projets, CV à jour ... Tout y est ! Laissez-vous tenter par un très court instant de plaisir visuel !">
+  <meta property="twitter:image" content="https://antoine-dupont.zd.fr/img/moi.jpg">
+
+  <meta name="theme-color" content="#686ea7" />
+
+  <!-- FontAwesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/bulma.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/logo.png" />
 </head>
 
@@ -69,17 +98,21 @@
                 ne vous en dis
                 pas plus, il
                 est expliqué
-                plus bas ! Je suis un <span></span>perfectionniste, qui aime bien le travail <span>bien fait</span>, je
+                plus bas ! Je suis un <span>perfectionniste</span>, qui aime le travail <span>bien fait</span>, je
                 suis <span>investi</span> dans mes
-                projets, et j'essaye de les amener le plus loin possible.
+                projets, et je les amène le plus loin possible.
               </p>
             </div>
             <h3 class="title is-3"></i>Ce que je recherche <i class="fas fa-glasses"></i></h3>
             <p>
-              Je suis actuellement à la recherche d'une entreprise pour effectuer une L3 MIAGE en alternance. J'aimerai
-              avoir l'opportunité de faire cette licence en alternance, pour aquérir de réelles compétences, et les
-              appliqués sur diverses projets. J'aime apprendre de nouvelles choses, mais ce que j'aime par dessus tout,
-              c'est maitrisé le sujet sur lequel je travaille.
+              Je suis actuellement à la <span>recherche d'une entreprise pour effectuer une L3 MIAGE en
+                alternance</span>. J'aimerai
+              avoir l'opportunité de faire cette licence en alternance, pour <span>acquérir</span> de <span>réelles
+                compétences</span>, et les
+              <span>appliquer sur divers projets</span>. J'aime <span>apprendre</span> de nouvelles choses, mais ce que
+              j'aime par dessus tout, c'est <span>maîtriser</span> le sujet sur lequel je travaille. Travailler
+              <span>efficacement</span>, <span>sans prise de tête</span> est certainement le <span>but</span> de tous
+              les <span>développeurs</span>.
             </p>
 
           </div>
@@ -192,21 +225,154 @@
     <div class="container">
       <h2 class="title is-2 has-text-centered">Projets</h2>
 
-      <!-- Projets portfolio -->
-      <section class="section" id="portfolio">
-        <div class="columns">
+      <!-- Projet serveur -->
+      <section class="section" id="server">
+        <div class="columns is-vcentered">
           <div class="column">
-            <img src="img/portfolio.png" alt="image projet portfolio avec le framework Bulma">
+            <img class="project-effect" src="img/serveur-putty-filezila-mc.jpg"
+              alt="image projet serveur de jeu Minecraft">
           </div>
           <div class="column">
             <div class="content">
-              <h3 class="title is-3"></i>Portfolio w/ Bulma <i class="fas fa-book-open" aria-hidden="true"></i></h3>
+              <h3 class="title is-3 text-right"><i class="fas fa-gamepad icon-color" aria-hidden="true"></i> Serveur de
+                jeu</h3>
+              <p class="text-right">
+                Cela fait presque 3 ans que j'ai créé cette structure. Étant un ancien joueur de ce jeu, et surtout ce
+                mode de
+                jeu, j'ai voulu créer mon univers, mon serveur. Je voulais avant tout permettre aux joueurs, de
+                retrouver le plaisir de jouer que j'ai eu auparavant. Cette expérience, de fonder une structure de ses
+                mains est vraiment unique. Que ce soit la
+                complexité, l'étendu des connaissances ou des tâches à effectuer, cela représente un travail assez
+                lourd. A la fin, nous attends la satisfaction d'avoir réussi, d'avoir quelque chose qui fonctionne
+                et qui continu de d'améliorer de jour en jour ...
+              </p>
+              <button class="button is-purple is-outlined show-modal text-right" id="server">En savoir
+                plus</button>
+              <div class="modal modal-server">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Serveur de jeu</p>
+                    <p class="modal-card-subtitle">Création et maintenance d'un serveur Minecraft.</p>
+                    <button class="delete to-close" id="server" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+
+                    <p>Pour monter ce serveur, j'ai du apprendre comment cela fonctionnait, comment on pouvait le
+                      personnaliser (via des plugins en Java), où trouver ces ressources, comment le rendre public et
+                      bien
+                      d'autres choses. Passant d'un simple hebergement spécialisé, à un VPS, puis à un serveur dédié,
+                      j'ai du
+                      maitriser
+                      de nouvelles compétences de gestion, de recherche, de configuration.</p>
+
+                    <p>J'ai tout appris sur le tas, en tombant sur des problèmes, sur des erreurs ... J'ai du me
+                      débrouiller et dans tous les cas, je devais réussir et surmonter ces problèmes. J'ai appris à
+                      faire des migrations d'un serveur à un autre, à gérer des entrées DNS (sous OVH), à installer un
+                      CMS
+                      pour avoir un site fonctionnel rapidement, puis le configurer entièrement, j'ai notamment fait des
+                      script
+                      Linux pour effectuer des sauvegardes et redémarrage journalier des serveurs de jeu, j'ai appris à
+                      maitriser les bases de linux (screen, htop, df ...). Cette structure m'a donné l'opportunité de me
+                      lancer dans la réalisation de petits plugins en Java pour ajouter du contenu, mais aussi, elle
+                      m'a fait découvrir la gestion d'équipe. J'ai appris et j'apprends encore énormément grace à mon
+                      serveur. C'est actuellement le plus gros projets que j'ai créé.</p>
+                  </section>
+                  <footer class="modal-card-foot">
+                    <div class="tags are-medium">
+                      <span class="tag is-dark"><i class="fab fa-java padding-icon" aria-hidden="true"></i>Java</span>
+                      <span class="tag is-dark"><i class="fab fa-linux padding-icon" aria-hidden="true"></i>Bash &
+                        Linux</span>
+                      <span class="tag is-dark"><i class="fas fa-users padding-icon"
+                          aria-hidden="true"></i>Manager</span>
+                      <span class="tag is-dark"><i class="fas fa-cogs padding-icon"
+                          aria-hidden="true"></i>Configuration</span>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projet serveur -->
+
+      <!-- Projet bot discord -->
+      <section class="section" id="discord-bot">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3"></i>Robot Discord.Js <i class="fas fa-robot icon-color" aria-hidden="true"></i>
+              </h3>
               <p>
+                Utilisée pour communiquer avec ma communauté (lié au premier projet), nous utilisons l'application
+                Discord. Elle permet de communiquer par écrit, ou même de parler directement avec les joueurs. Nous
+                pouvons créer gratuitement des serveurs pour rassembler des personnes sur une même plateforme. Cette
+                application est très pratique pour annoncer des mises à jour du serveur, des maintenances, des problèmes
+                réglés, des ajouts ... Je voulais apporter une touche de personnalisation à notre serveur Discord,
+                et y ajouter quelques fonctionnalités ...
+              </p>
+              <button class="button is-purple is-outlined show-modal" id="discord">En savoir plus</button>
+              <div class="modal modal-discord">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Robot Discord.Js</p>
+                    <p class="modal-card-subtitle">Réalisation de robot pour l'application Discord.</p>
+                    <button class="delete to-close" id="discord" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <p>
+                      Je me suis donc intéressé à la programmation de "Bot" Discord. Plusieurs choix sont possibles
+                      quant
+                      aux langages, Python, Java, C# et Javascript. J'ai personnellement choisi le Javascript, car c'est
+                      un langage qui ressemble au Java, tout en étant léger et plus simple. J'utilise donc l'API <a
+                        href="https://discord.js.org/#/" target="_blank">Discord.Js</a> avec Node.Js pour permettre de
+                      lancer/simuler du code côté serveur.</p>
+                    <p>J'ai codé plusieurs commandes comme : suppression de X
+                      message(s), commande pour standardiser et comptabiliser le nombre de bugs et idées données par les
+                      joueurs, des commandes d'informations, et une commande pour candidater qui fonctionne avec une
+                      suite de questions. J'ai utilisé les réactions sur les divers messages personnalisés fait par les
+                      autres commandes pour ajouter des actions supplémentaires tel que passer un bug en résolu, ou
+                      accepter une idée émise par un joueur. Ces idées et bugs sont sauvegardés dans des fichiers json
+                      pour garder une trace de leur auteur, et date de création.</p>
+                  </section>
+                  <footer class="modal-card-foot">
+                    <div class="tags are-medium">
+                      <span class="tag is-dark"><i class="fab fa-js padding-icon" aria-hidden="true"></i>Js</span>
+                      <span class="tag is-dark"><i class="fab fa-node-js padding-icon"
+                          aria-hidden="true"></i>Node.Js</span>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <img class="project-effect" src="img/robot-discord-vs-code.png"
+              alt="image projet robot discord lancé avec Node.js">
+          </div>
+        </div>
+      </section>
+      <!-- Projet bot discord -->
+
+      <!-- Projet portfolio -->
+      <section class="section" id="portfolio">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img class="project-effect" src="img/portfolio.png" alt="image projet portfolio avec le framework Bulma">
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3 text-right"><i class="fas fa-suitcase icon-color" aria-hidden="true"></i> Portfolio
+                w/ Bulma
+              </h3>
+              <p class="text-right">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
                 est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
                 ipsum fuga nulla.
               </p>
-              <button class="button is-purple is-outlined bottom-right show-modal" id="portfolio">En savoir
+              <button class="button is-purple is-outlined show-modal text-right" id="portfolio">En savoir
                 plus</button>
               <div class="modal modal-portfolio">
                 <div class="modal-background"></div>
@@ -221,7 +387,6 @@
                     mollitia doloribus quas eligendi.
                   </section>
                   <footer class="modal-card-foot">
-
                     <div class="buttons">
                       <a class="button is-rounded is-dark">
                         <span class="icon is-small"><i class="fab fa-html5" aria-hidden="true"></i></span>
@@ -243,128 +408,10 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
-
       </section>
-
-      <!-- Projets portfolio -->
-
-      <!-- Projets bot discord -->
-      <section class="section" id="discord-bot">
-        <div class="columns">
-          <div class="column">
-            <div class="content">
-              <h3 class="title is-3"></i>Robot Discord.Js <i class="fas fa-robot" aria-hidden="true"></i></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
-                est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
-                ipsum fuga nulla.
-              </p>
-              <button class="button is-purple is-outlined bottom-right show-modal" id="discord">En savoir plus</button>
-              <div class="modal modal-discord">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                  <header class="modal-card-head">
-                    <p class="modal-card-title">Robot Discord.Js</p>
-                    <button class="delete to-close" id="discord" aria-label="close"></button>
-                  </header>
-                  <section class="modal-card-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cumque quos molestias at voluptas
-                    maxime consequatur nemo nisi placeat, numquam quidem delectus commodi cupiditate molestiae officiis,
-                    mollitia doloribus quas eligendi.
-                  </section>
-                  <footer class="modal-card-foot">
-
-                    <div class="buttons">
-                      <a class="button is-rounded is-dark">
-                        <span class="icon is-small"><i class="fab fa-js" aria-hidden="true"></i></span>
-                        <span>Js</span>
-                      </a>
-                      <a class="button is-rounded is-dark">
-                        <span class="icon is-small"><i class="fab fa-node-js" aria-hidden="true"></i></span>
-                        <span>Node.Js</span>
-                      </a>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="column">
-            <img src="img/portfolio.png" alt="image projet robot discord lancé avec Node.js">
-          </div>
-        </div>
-
-
-      </section>
-      <!-- Projets bot discord -->
-
-
-      <!-- Projets serveur -->
-      <section class="section" id="server">
-        <div class="columns">
-
-          <div class="column">
-            <img src="img/portfolio.png" alt="image projet robot discord lancé avec Node.js">
-          </div>
-
-          <div class="column">
-            <div class="content">
-              <h3 class="title is-3"></i>Serveur de jeu <i class="fas fa-gamepad" aria-hidden="true"></i></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquid vitae quibusdam modi minus
-                est possimus eos! Doloremque voluptas omnis, provident mollitia odit iste sapiente? Explicabo quibusdam
-                ipsum fuga nulla.
-              </p>
-              <button class="button is-purple is-outlined bottom-right show-modal" id="server">En savoir plus</button>
-              <div class="modal modal-server">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                  <header class="modal-card-head">
-                    <p class="modal-card-title">Serveur de jeu</p>
-                    <button class="delete to-close" id="server" aria-label="close"></button>
-                  </header>
-                  <section class="modal-card-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est cumque quos molestias at voluptas
-                    maxime consequatur nemo nisi placeat, numquam quidem delectus commodi cupiditate molestiae officiis,
-                    mollitia doloribus quas eligendi.
-                  </section>
-                  <footer class="modal-card-foot">
-
-                    <div class="buttons">
-                      <a class="button is-rounded is-dark">
-                        <span class="icon is-small"><i class="fab fa-java" aria-hidden="true"></i></span>
-                        <span>Java</span>
-                      </a>
-                      <a class="button is-rounded is-dark">
-                        <span class="icon is-small"><i class="fab fa-linux" aria-hidden="true"></i></span>
-                        <span>Bash & Linux</span>
-                      </a>
-                      <a class="button is-rounded is-dark">
-                        <span class="icon is-small"><i class="fas fa-users" aria-hidden="true"></i></span>
-                        <span>Manager</span>
-                      </a>
-                      <a class="button is-rounded is-dark">
-                        <span class="icon is-small"><i class="fas fa-cogs" aria-hidden="true"></i></span>
-                        <span>Configuration</span>
-                      </a>
-                    </div>
-                  </footer>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-      </section>
-      <!-- Projets bot discord -->
-
+      <!-- Projet portfolio -->
 
     </div>
   </section>
@@ -447,7 +494,7 @@
   </section>
   <!-- Section cv -->
 
-  <hr class=" hr-blue-invert" />
+  <hr class="hr-blue-invert" />
 
   <!-- Footer -->
   <section id="footer">
@@ -477,9 +524,9 @@
           </div>
           <div class="column">
             <div class="LI-profile-badge padding-badge" data-version="v1" data-size="large" data-locale="fr_FR"
-              data-type="horizontal" data-theme="dark" data-vanity="antoine-dupont-zd-fr"><a class="LI-simple-link"
-                href='https://fr.linkedin.com/in/antoine-dupont-zd-fr'>Antoine
-                Dupont</a></div>
+              data-type="horizontal" data-theme="dark" data-vanity="antoine-dupont-zd-fr"><a class="LI-simple-link link"
+                href='https://fr.linkedin.com/in/antoine-dupont-zd-fr'>Normalement un badge LinkedIn.</a>
+            </div>
           </div>
         </div>
       </div>
