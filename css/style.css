@@ -93,9 +93,23 @@ p span {
   color: #686ea7;
 }
 
+.footer .fa-github {
+  color: #ffffff;
+}
+
 .text-right {
   text-align: right;
   float: right;
+}
+
+section p a.underline {
+  color: rgb(142, 151, 235);
+  text-decoration: underline;
+}
+
+section p a.underline:hover {
+  color: rgb(142, 151, 235, 0.6);
+  text-decoration: underline;
 }
 
 /* 
@@ -162,7 +176,7 @@ a.link-purple:hover {
   Padding icon
 */
 .padding-icon {
-  margin-right: 5%;
+  margin-right: 8px;
 }
 
 
@@ -190,10 +204,6 @@ FOOTER
 
 li {
   list-style-type: none;
-}
-
-.fa-github {
-  color: #1e272e;
 }
 
 .fa-linkedin {
