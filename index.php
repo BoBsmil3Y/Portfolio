@@ -550,67 +550,76 @@
   <!-- Section contact -->
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="title is-2 has-text-centered">Contact (Work In Progress 👷‍)</h2>
-
+      <h2 class="title is-2 has-text-centered">Contact</h2>
       <section class="section">
 
-        <div class="field">
-          <label class="label">De la part de :</label>
-          <div class="control has-icons-left">
-            <input class="input" type="Email" placeholder="Email">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-          </div>
-        </div>
-
-        <fieldset disabled>
+        <form method="post">
           <div class="field">
-            <label class="label">Sera envoyé à :</label>
+            <label class="label">De la part de :</label>
             <div class="control has-icons-left">
-              <input class="input" type="Email" value="antoine.dupont59@hotmail.com" readonly>
+              <input class="input" type="Email" placeholder="Email" name="email" required>
               <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
+                <i class="fas fa-envelope"></i>
               </span>
             </div>
           </div>
-        </fieldset>
 
-        <div class="field">
-          <label class="label">Objet :</label>
-          <div class="control has-icons-left">
-            <input class="input" type="text" placeholder="Raison de votre message."></input>
-            <span class="icon is-small is-left">
-              <i class="far fa-comments"></i>
-            </span>
+          <fieldset disabled>
+            <div class="field">
+              <label class="label">Sera envoyé à :</label>
+              <div class="control has-icons-left">
+                <input class="input" type="Email" value="antoine.dupont59@hotmail.com" readonly>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="label">Objet :</label>
+            <div class="control has-icons-left">
+              <input class="input" type="text" placeholder="Raison de votre message." name="object" required>
+              <span class="icon is-small is-left">
+                <i class="far fa-comments"></i>
+              </span>
+            </div>
           </div>
-        </div>
 
-        <div class="field">
-          <label class="label">Message :</label>
-          <div class="control">
-            <textarea class="textarea" type="text" placeholder="Voulez-vous me transmettre un message ?"></textarea>
+          <div class="field">
+            <label class="label">Message :</label>
+            <div class="control">
+              <textarea class="textarea" type="text" placeholder="Voulez-vous me transmettre un message ?"
+                name="message" required></textarea>
+            </div>
+            <p class="help">Indiquez la raison de votre message, ainsi que des coordonnées pour que je puisse vous
+              recontacter !</p>
           </div>
-          <p class="help">Indiquez la raison de votre message, ainsi que des coordonnées pour que je puisse vous
-            recontacter !</p>
-        </div>
 
-        <div class="field">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox">
-              Recevoir une copie du mail</a>
-            </label>
-          </div>
-        </div>
+          <input type="submit" name="submit" value="Envoyer" class="button is-purple">
 
-        <button class="button is-purple">Envoyer</button>
+        </form>
+        
+        <?php
+        if (isset($_POST['message'])) {
+            $position_arobase = strpos($_POST['email'], '@');
+            if ($position_arobase === false)
+                echo '<p>Votre email doit comporter un arobase.</p>';
+            else {
+                $retour = mail('antoine.dupont59@hotmail.com', $_POST['object'], $_POST['message'], 'From: ' . $_POST['email']);
+                if($retour)
+                    echo "<script>alert('Votre message a été envoyé.');</script>";
+                else
+                    echo "<script>alert('Une erreur est survenu ! Contactez moi directement au numéro inscrit sur mon CV.');</script>";
+            }
+        }
+        ?>
 
-      </section>
+    </section>
   </section>
   <!-- Section contact -->
 
-  <hr class="hr-blue" />
+  <hr class="hr-blue"/>
 
   <!-- Footer -->
   <section id="footer">

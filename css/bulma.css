@@ -3960,6 +3960,11 @@ fieldset[disabled] .button {
   color: #fff;
 }
 
+.notification.is-purple {
+  background-color: rgb(157, 165, 240);
+  color: #fff;
+}
+
 .notification.is-link {
   background-color: #3273dc;
   color: #fff;

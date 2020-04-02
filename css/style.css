@@ -180,6 +180,10 @@ a.link-purple:hover {
 }
 
 
+.hide {
+  display: none;
+}
+
 /*
 
 END MAIN CONTENT
