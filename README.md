@@ -1,4 +1,4 @@
-# Selection de portfolio
+# Portfolio (Bulma)
 
 ## Description
 J'ai réalisé ce site pour m'améliorer dans les langages Web, ainsi que pour montrer mes projets en cours. 
